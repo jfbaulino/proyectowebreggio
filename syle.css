@@ -1,0 +1,161 @@
+/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+padding: 0;
+margin: 0;    
+}
+
+body {
+    background-color: rgb(203, 216, 226);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: rgb(237, 48, 48);
+    
+}
+/* 
+}
+.menunav {
+    padding-top: 15px;
+    background-color: rgb(237, 48, 48);
+    color: rgb(141, 105, 62);
+    text-decoration: none;
+    
+ul {
+    text-align: end;
+    padding-top: 15px;
+}
+ul li {
+    list-style: none;
+    margin: 0px 10px;
+    
+}
+ul li a {
+    color: rgb(238, 226, 226);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+} */ */
+    
+.nav-link {
+    color: rgb(238, 226, 226);
+    background-color: rgb(237, 48, 48);
+    padding-top: 15px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-item {
+    display: flex;
+    align-items: end;
+}
+
+.REPUESTOS {
+    display: flex;
+    list-style-type: circle
+} 
+
+
+article {
+    display: flex;
+    padding: 10PX;
+    align-items: center;
+}   
+
+footer {
+    border-top: 1px solid grey;
+    padding: 7px;
+}
+footer ul li a {
+    display: flex;
+    color: black;
+    justify-content: end;
+}
+
+div ul li {
+    display: flex;
+}
+
+.modelosconteiner {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-row-gap: 60px;
+    grid-column-gap: 30px;
+    margin-top: 20px;
+    }
+form {
+    padding: 35px;
+}
+
+/*detalles*/
+
+.logo {
+    width: 25%;
+}
+.footercontacto {
+    text-align: center;
+}
+.principal {
+    text-align: center;
+}
+.service {
+    display: contents;
+}
+.SACAR-TURNO {
+    background-color: rgb(214, 28, 28);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.personamoto {
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+/*media query*/
+/*table*/
+@media only screen and (max-width: 768px){}
+
+/*mobile*/
+@media only screen and (max-width: 576px){
+/*index*/
+
+.personamoto {
+    flex-direction: column;
+}
+img {
+width: 100%;
+align-items: center;
+}
+.REPUESTOS {
+    flex-direction: column;
+}
+p {
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+}
+.modelosconteiner
+grid-template-columns: 1fr;
+}
+
+footer .bi {
+    font-size: 2.0rem;
+}
+
+ul {
+    list-style: none;
+}
