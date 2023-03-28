@@ -12,7 +12,6 @@ body {
 header {
     position: sticky;
     top: 0;
-    display: flex;
     background-color: rgb(237, 48, 48);
     
 }
@@ -131,31 +130,32 @@ form {
 
 /*mobile*/
 @media only screen and (max-width: 576px){
-/*index*/
-
-.personamoto {
-    flex-direction: column;
-}
-img {
-width: 100%;
-align-items: center;
-}
-.REPUESTOS {
-    flex-direction: column;
-}
-p {
-    justify-content: center;
-    text-align: justify;
-    flex-direction: column;
-}
-.modelosconteiner
-grid-template-columns: 1fr;
-}
-
-footer .bi {
-    font-size: 2.0rem;
-}
-
-ul {
-    list-style: none;
-}
+    /*index*/
+    
+    .personamoto {
+        flex-direction: column;
+    }
+    img {
+    width: 100%;
+    align-items: center;
+    }
+    .REPUESTOS {
+        flex-direction: column;
+    }
+    p {
+        justify-content: center;
+        text-align: justify;
+        flex-direction: column;
+    }
+    .modelosconteiner {
+    grid-template-columns: 1fr;
+    }
+    
+    footer .bi {
+        font-size: 2.0rem;
+    }
+    
+    ul {
+        list-style: none;
+    }
+} 
