@@ -1,0 +1,108 @@
+
+@import "index";
+@import "service";
+@import "contacto";
+@import "modelos";
+
+/*variables*/
+$rojoreggio:rgb(237, 48, 48);
+
+/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+padding: 0;
+margin: 0;    
+}
+
+body {
+    background-color: rgb(203, 216, 226);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*header con nesting*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: $rojoreggio;
+    .navbar-collapse {
+        justify-content: flex-end;  
+}
+        .nav-item {
+            display: flex;
+            align-items: end;
+}
+            .nav-link {
+                color: rgb(238, 226, 226);
+                background-color: $rojoreggio;
+                padding-top: 15px;
+}
+
+}
+
+
+.REPUESTOS {
+    display: flex;
+    list-style-type: circle
+} 
+
+
+article {
+    display: flex;
+    padding: 10PX;
+    align-items: center;
+}   
+
+/*footer con nesting*/
+footer {
+    border-top: 1px solid grey;
+    padding: 7px;
+    ul li a {
+        display: flex;
+        color: black;
+        justify-content: end;
+    }
+        ul {
+            list-style: none;
+        }
+}
+
+div ul li {
+    display: flex;
+}
+
+
+/*media query*/
+/*table*/
+@media only screen and (max-width: 768px){}
+
+/*mobile*/
+@media only screen and (max-width: 576px){
+    /*index*/
+    
+    .personamoto {
+        flex-direction: column;
+    }
+    img {
+    width: 100%;
+    align-items: center;
+    }
+    .REPUESTOS {
+        flex-direction: column;
+    }
+    p {
+        justify-content: center;
+        text-align: justify;
+        flex-direction: column;
+    }
+    .modelosconteiner {
+    grid-template-columns: 1fr;
+    }
+    
+    footer .bi {
+        font-size: 2.0rem;
+    }
+    
+    ul {
+        list-style: none;
+    }
+} 
